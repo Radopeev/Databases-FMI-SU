@@ -1,0 +1,3 @@
+SELECT name AS shipname
+FROM SHIPS
+WHERE LAUNCHED < 1918

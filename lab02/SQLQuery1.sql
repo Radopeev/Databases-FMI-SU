@@ -1,0 +1,4 @@
+SELECT name
+FROM STARSIN as s JOIN MOVIESTAR as ms
+	ON s.STARNAME = ms.NAME
+WHERE ms.GENDER = 'M' AND s.MOVIETITLE = 'The Usual Suspects'

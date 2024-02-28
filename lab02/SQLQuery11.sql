@@ -1,0 +1,10 @@
+SELECT DISTINCT PC.hd
+FROM PC
+WHERE PC.hd IN (
+    SELECT hd
+    FROM PC
+    GROUP BY hd
+    HAVING COUNT(DISTINCT code) >= 2
+);
+
+
